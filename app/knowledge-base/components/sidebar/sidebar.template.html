@@ -1,0 +1,55 @@
+<div class="flex flex-col grow px-4 pt-4 pb-12 mx-auto w-full shadow-sm bg-slate-100 max-md:mt-10">
+
+  <div class="flex gap-5 justify-between px-5 py-2.5 w-full whitespace-nowrap rounded bg-slate-100"
+    ng-repeat="item in $ctrl.items">
+    <div class="flex gap-4 justify-between text-sm leading-5 text-gray-500">
+      <img loading="lazy" src="{{item.imgSrc}}" class="w-6 aspect-square" />
+      <div class="my-auto">{{item.name}}</div>
+    </div>
+    <div class="{{{true: '', false: 'hidden'}[item.notification]}}">
+      <div
+        class="flex flex-col justify-center my-auto text-xs font-bold leading-4 text-center text-white aspect-[1.63]">
+        <div class="justify-center px-2 py-1 bg-gray-900 rounded-xl aspect-[1.63]">
+          16
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="self-start mt-8 ml-4 text-xs leading-4 text-slate-400 max-md:ml-2.5">
+    Other Information
+  </div>
+  <div
+    class="flex gap-4 justify-between px-4 py-2 mt-4 text-sm font-medium leading-5 text-white whitespace-nowrap bg-blue-600 rounded items-center">
+    <img loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/cfd76cd8ac32ba1886ca9d9346eb9acb8834f3743fb4c76fc155c9308bfddbe0?"
+      class="w-6 aspect-square">
+    <div class="grow">Knowledge Base</div>
+  </div>
+  <div
+    class="flex gap-4 justify-between px-4 py-2.5 text-sm leading-5 text-gray-500 whitespace-nowrap rounded items-center bg-slate-100">
+    <img loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/6c1c189116f27c98f2bc8db547797e3d8311598caaf894265234aa7d283be048?"
+      class="w-6 aspect-square">
+    <div class="grow">Product Updates</div>
+  </div>
+  <div class="self-start mt-8 ml-4 text-xs leading-4 text-slate-400 max-md:ml-2.5">
+    Settings
+  </div>
+  <div
+    class="flex gap-4 justify-between px-4 py-2.5 mt-3.5 text-sm leading-5 text-gray-500 whitespace-nowrap rounded items-center bg-slate-100">
+    <img loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/b84b3adf998e1e3ffd0cfb2cf340678059d966990ed45fd92493419d74289768?"
+      class="w-6 aspect-square">
+    <div class="grow">Personal Settings</div>
+  </div>
+  <div
+    class="flex gap-4 justify-between px-4 py-2.5 text-sm leading-5 text-gray-500 whitespace-nowrap rounded items-center bg-slate-100">
+    <img loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/6610640475fd60e1a316ef92f5e957817203342dff113a763469d8952cf95cc3?"
+      class="w-6 aspect-square">
+      <div class="grow">Global Settings</div>
+  </div>
+</div>

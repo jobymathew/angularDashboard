@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" ng-app="phonecatApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Google Phone Gallery</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="app.css" />
+    <!-- Tailwind css -->
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+    <script src="core/core.module.js"></script>
+    <script src="core/checkmark/checkmark.filter.js"></script>
+
+    <!-- Page and components -->
+    <script src="knowledge-base/knowledge-base.module.js"></script>
+    <script src="knowledge-base/knowledge-base.component.js"></script>
+    <script src="knowledge-base/components/navbar/navbar.component.js"></script>
+    <script src="knowledge-base/components/sidebar/sidebar.component.js"></script>
+    <script src="knowledge-base/components/searchbar/searchbar.component.js"></script>
+    <script src="knowledge-base/components/card/card.component.js"></script>
+    <script src="knowledge-base/components/small-card/small-card.component.js"></script>
+  </head>
+  <body>
+
+    <div ng-view></div>
+
+  </body>
+</html>
